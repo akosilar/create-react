@@ -6,13 +6,18 @@ import Chicken from './Chicken'
 import Greeter from './Greeter'
 import Die from './die'
 import ListPicker from './ListPicker'
+import DoubleDice from './DoubleDice'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <div>
-      <ListPicker values={[1, 2, 3]} />
+      <DoubleDice />
+      <DoubleDice />
+      <DoubleDice />
+
+      {/* <ListPicker values={[1, 2, 3]} /> */}
       {/* <Die numSides={20} />
       <Die numSides={6} />
       <Die numSides={10} />
