@@ -5,16 +5,18 @@ import './App.css'
 import Chicken from './Chicken'
 import Greeter from './Greeter'
 import Die from './die'
+import ListPicker from './ListPicker'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <div>
-      <Die numSides={20} />
+      <ListPicker values={[1, 2, 3]} />
+      {/* <Die numSides={20} />
       <Die numSides={6} />
       <Die numSides={10} />
-
+      <Die /> */}
 
       {/* <Greeter person="Bill" from="Jose" />
       <Greeter person="Sars" from="Sam" />
