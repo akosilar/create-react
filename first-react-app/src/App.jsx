@@ -3,12 +3,26 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Chicken from './Chicken'
+import Greeter from './Greeter'
+import Die from './die'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <Chicken />
+    <div>
+      <Die numSides={20} />
+      <Die numSides={6} />
+      <Die numSides={10} />
+
+
+      {/* <Greeter person="Bill" from="Jose" />
+      <Greeter person="Sars" from="Sam" />
+      <Greeter person="Mars" from="Dean" /> */}
+    </div>
+
+
+    // <Chicken />
 
     // <>
     //   <div>
