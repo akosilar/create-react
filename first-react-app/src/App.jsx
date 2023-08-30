@@ -7,12 +7,14 @@ import Greeter from './Greeter'
 import Die from './die'
 import ListPicker from './ListPicker'
 import DoubleDice from './DoubleDice'
+import Heading from './Heading'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <div>
+      <Heading color='magenta' text={"the quick brown"} fontSize='20px' />
       <DoubleDice />
       <DoubleDice />
       <DoubleDice />
