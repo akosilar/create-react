@@ -9,7 +9,7 @@ export default function Slots({ val1, val2, val3 }) {
         <div>
             <h1>Slot Machine</h1>
             <span>{val1}</span>{val2}<span>{val3}</span><span></span>
-            <p>{message}</p>
+            <p style={{ color: (val1 === val2 && val1 === val3) ? "green" : "red" }}>{message}</p>
         </div>
     )
 }

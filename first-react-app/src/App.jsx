@@ -10,20 +10,32 @@ import DoubleDice from './DoubleDice'
 import Heading from './Heading'
 import ColorList from './ColorList'
 import Slots from "./Slots"
+import ShoppingList from './ShoppingList'
+
+const data = [
+  { item: 'eggs', quantity: 12, completed: false },
+  { item: 'milk', quantity: 1, completed: true },
+  { item: 'chicken breasts', quantity: 4, completed: false },
+  { item: 'carrots', quantity: 6, completed: true }
+
+]
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <div>
-      <Heading color='magenta' text={"the quick brown"} fontSize='20px' />
+      {
+        <ShoppingList items={data} />
+      }
+      {/* <Heading color='magenta' text={"the quick brown"} fontSize='20px' />
       <DoubleDice />
       <DoubleDice />
       <DoubleDice />
       <ColorList colors={["red", "pink", "purple", "teal"]} />
       <Slots val1="1" val2="2" val3="3" />
       <Slots val1="3" val2="3" val3="3" />
-
+ */}
 
       {/* <ListPicker values={[1, 2, 3]} /> */}
       {/* <Die numSides={20} />
