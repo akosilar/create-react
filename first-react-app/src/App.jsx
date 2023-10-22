@@ -8,6 +8,8 @@ import Die from './die'
 import ListPicker from './ListPicker'
 import DoubleDice from './DoubleDice'
 import Heading from './Heading'
+import ColorList from './ColorList'
+import Slots from "./Slots"
 
 function App() {
   const [count, setCount] = useState(0)
@@ -18,6 +20,10 @@ function App() {
       <DoubleDice />
       <DoubleDice />
       <DoubleDice />
+      <ColorList colors={["red", "pink", "purple", "teal"]} />
+      <Slots val1="1" val2="2" val3="3" />
+      <Slots val1="3" val2="3" val3="3" />
+
 
       {/* <ListPicker values={[1, 2, 3]} /> */}
       {/* <Die numSides={20} />
