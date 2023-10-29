@@ -1,3 +1,5 @@
+
+
 function ShoppingListItem({ item, quantity, completed }) {
     const styles = {
         color: completed ? "grey" : "red",

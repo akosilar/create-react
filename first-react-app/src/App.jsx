@@ -12,6 +12,7 @@ import ColorList from './ColorList'
 import Slots from "./Slots"
 import ShoppingList from './ShoppingList'
 import PropertyList from '../PropertyList'
+import Clicker from './Clicker'
 
 const data = [
   { id: 1, item: 'eggs', quantity: 12, completed: false },
@@ -35,7 +36,8 @@ function App() {
   return (
     <div>
       {
-        <PropertyList properties={properties} />
+        <Clicker />
+        // <PropertyList properties={properties} />
         // <ShoppingList items={data} />
       }
       {/* <Heading color='magenta' text={"the quick brown"} fontSize='20px' />
