@@ -11,7 +11,7 @@ import Heading from './Heading'
 import ColorList from './ColorList'
 import Slots from "./Slots"
 import ShoppingList from './ShoppingList'
-import PropertyList from '../PropertyList'
+// import PropertyList from './PropertyList'
 import Clicker from './Clicker'
 import Form from './Form'
 
@@ -37,8 +37,9 @@ function App() {
   return (
     <div>
       {
-        <Form />
-        // <Clicker />
+
+        // <Form />
+        <Clicker message="please stop clicking me" buttonText="Click me" />
         // <PropertyList properties={properties} />
         // <ShoppingList items={data} />
       }
