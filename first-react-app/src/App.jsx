@@ -14,6 +14,7 @@ import ShoppingList from './ShoppingList'
 // import PropertyList from './PropertyList'
 import Clicker from './Clicker'
 import Form from './Form'
+import Counter from './Counter'
 
 const data = [
   { id: 1, item: 'eggs', quantity: 12, completed: false },
@@ -37,9 +38,9 @@ function App() {
   return (
     <div>
       {
-
+        <Counter />
         // <Form />
-        <Clicker message="please stop clicking me" buttonText="Click me" />
+        // <Clicker message="please stop clicking me" buttonText="Click me" />
         // <PropertyList properties={properties} />
         // <ShoppingList items={data} />
       }
