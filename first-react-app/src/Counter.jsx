@@ -1,6 +1,7 @@
 import { useState } from "react"
 
 export default function Counter() {
+    //useState only runs once on the very first time the function is ran. It will set num to 5 again.
     const [num, setNum] = useState(5)
     console.log(`num: ${num}`);
     const changeNum = () => {
