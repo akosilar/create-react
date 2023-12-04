@@ -1,0 +1,10 @@
+.color-box {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+
+.box {
+    backgroundColor: bgColor;
+    width: 5rem;
+    height: 5rem;
+}

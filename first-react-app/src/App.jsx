@@ -17,6 +17,7 @@ import Form from './Form'
 import Counter from './Counter'
 import Toggler from './Toggler'
 import TogglerCounter from './ToggleCounter'
+import ColorGrid from './ColorGrid'
 
 const data = [
   { id: 1, item: 'eggs', quantity: 12, completed: false },
@@ -40,9 +41,10 @@ function App() {
   return (
     <div>
       {
+        <ColorGrid />
         // <TogglerCounter />
         // < Toggler />
-        <Counter />
+        // <Counter />
         // <Form />
         // <Clicker message="please stop clicking me" buttonText="Click me" />
         // <PropertyList properties={properties} />
